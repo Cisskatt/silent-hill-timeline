@@ -3,12 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <title>Welcome to silent hill</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 <style>
 body { background-color: #1a1a1a;
-color:#e63946; 
-font-family: Arial, sans-serif;
+color:#C45508; 
+font-family: 'Montserrat', sans-serif;
+
+margin: 0;
+position: relative;
+z-index: 1;
+
+
+   background-image:
+    radial-gradient(circle at 15% 25%, rgba(139,69,19,0.9) 0%, rgba(26,26,26,1) 60%),
+    radial-gradient(circle at 85% 75%, rgba(165,42,42,0.8) 0%, rgba(26,26,26,1) 60%),
+    radial-gradient(circle at 50% 50%, rgba(255,140,0,0.5) 0%, rgba(26,26,26,1) 70%),
+    linear-gradient(135deg, rgba(80,30,20,0.6) 0%, rgba(20,10,5,0.6) 100%);
+  background-blend-mode: normal;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
 }
 
+/* === EVENT-STIL === */
 .event {
   background-color: #2a2a2a;
   border-left: 4px solid #888;
@@ -21,19 +40,47 @@ font-family: Arial, sans-serif;
 
 h3 {
   margin-top: 0;
-  color: #e63946;
+  color: #999999;
 }
 
+/* === BRÖDTEXT === */
 p {
   margin: 5px 0;
 } 
+/* === RUBRIK h1 === */
 h1 {
   text-align: center;
-  color: #e63946;
+  color: #C45508;
   margin-top: 40px;
   font-size: 2em;
   text-shadow: 1px 1px 3px #000;
+font-family: 'Cinzel', serif;
+
 }
+/* === Navigationsmeny === */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #2a2a2a;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #444;
+  z-index: 1000;
+}
+
+nav a {
+  color: #999999;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+/* === EVENT-STIL MED HOVER === */
 .event {
   background-color: #2a2a2a;
   border-left: 4px solid #888;
@@ -52,18 +99,45 @@ h1 {
 
 h3 {
   margin-top: 0;
-  color: #ffcc99;
+  color: #999999;
   font-size: 1.3em;
+font-family: 'Cinzel', serif;
+
 }
 
 p {
   margin: 5px 0;
   line-height: 1.5;
 }
+/* === Sektionrubriker === */
+h2 {
+  color: #999999;
+  text-align: center;
+  font-size: 1.6em;
+  margin-top: 40px;
+font-family: 'Cinzel', serif;
+}
+
+nav a.active {
+  color: #C45508;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 </style>
 </head>
 <body>
+ 
 <h1>Welcome to Silent Hill</h1>
+<nav>
+  <a href="#tidslinje" id="link-tidslinje">Tidslinje</a>
+  <a href="#karaktärer" id="link-karaktärer">Karaktärer</a>
+  <a href="#platser" id="link-platser">Platser</a>
+  <a href="#symbolik" id="link-symbolik">Symbolik</a>
+</nav>
+
+
+<section id="tidslinje">
 <div class="event">
 <h3>🕰️Silent hill grundas</h3>
 <p>📅Före 1600-talet</p>
@@ -114,6 +188,95 @@ p {
   <p>📅 Efter 2000-talet</p>
   <p>📜Efter år av tragedier, försvinnanden och övernaturliga händelser överges Silent Hill. Staden förblir ett mysterium – tyst, dimmig och förbjuden.</p>
 </div>
+</section>
+<section id="karaktärer">
+<h2>Karaktärer</h2>
+<p>Här kommer du kunna läsa om viktiga personer i Silent Hill-universumet.</p>
+</section>
+
+<section id="platser">
+  <h2>Platser</h2>
+  <div class="event">
+  <h3>Alchemilla Hospital</h3>
+  <p>Silent Hills sjukhus är en plats för både fysisk och psykisk smärta.</p>
+  <ul> 
+<li> Ursprungligen ett vanligt sjukhus, men i spelet blir det en labyrint av blodiga korridorer och övergivna operationssalar. </li>
+<li> Symboliserar trauma, medicinsk maktlöshet och förvrängd omsorg. </li>
+</ul>
+</div>
+<div class="event">
+  <h3>Midwich Elementary Schoo-</h3>
+  <p>Midwich Elementary är en av de mest ikoniska platserna i Silent Hill.</p>
+  <ul> 
+<li>Skolan framstår först som tom och övergiven, men förvandlas snabbt till en mardrömslik version fylld av rost, blod och barnlika monster.</li>
+<li>Den speglar Alessas barndomstrauma och fungerar som en symbol för förlorad oskuld, förvrängd trygghet och det undermedvetnas mörker.</li>
+</ul>
+</div>
+<div class="event">
+  <h3>Toluca Lake</h3>
+  <p>Toluca Lake är en central plats i Silent Hills geografi och symbolik.</p>
+  <ul> 
+<li>Sjön är ofta täckt av tät dimma och omges av tystnad, vilket förstärker känslan av isolering.</li>
+<li>Här försvann passagerarbåten Little Baroness spårlöst – ett mysterium som aldrig fick sin lösning.</li>
+<li>Sjön representerar det undermedvetna, det som döljer sig under ytan, och fungerar som en spegel för karaktärernas inre tillstånd.</li>
+</ul>
+</div>
+<div class="event">
+  <h3>Brookhaven Hospital</h3>
+  <p>Brookhaven Hospital är en psykiatrisk klinik som spelar en central roll i Silent Hill 2.</p>
+  <ul> 
+<li>- Till skillnad från Alchemilla är Brookhaven mer intimt kopplad till karaktärernas mentala tillstånd – särskilt James Sunderland.</li>
+<li>Sjukhuset är fyllt av symbolik kring skuld, förnekelse och psykisk kollaps, med rum som förändras beroende på spelarens inre resa.</li>
+<li>Det är en plats där verklighet och hallucinationer smälter samman, och där det undermedvetna får fysisk form.</li>
+</ul>
+</div>
+<div class="event">
+  <h3>The Church</h3>
+  <p>Den religiösa byggnaden som används av sekten The Order är en plats där tro förvrids till kontroll.</p>
+  <ul> 
+<li>Här utförs ritualer, offras människor och kanaliseras mörka krafter.</li>
+<li>Kyrkan representerar blind fanatism, maktmissbruk och hur andlighet kan förvandlas till skräck.</li>
+<li>Arkitekturen är ofta gotisk och överväldigande, vilket förstärker känslan av underkastelse och förlorad frihet.</li>
+</ul>
+</div>
+</section>
+
+<script>
+  window.addEventListener('scroll', function () {
+    const sections = [
+      { id: 'tidslinje', link: 'link-tidslinje' },
+      { id: 'karaktärer', link: 'link-karaktärer' },
+      { id: 'platser', link: 'link-platser' },
+      { id: 'symbolik', link: 'link-symbolik' }
+    ];
+
+    let current = null;
+    const scrollY = window.scrollY;
+
+    sections.forEach(section => {
+      const el = document.getElementById(section.id);
+      if (el && scrollY >= el.offsetTop - 100) {
+        current = section.link;
+      }
+    });
+
+    sections.forEach(section => {
+      const link = document.getElementById(section.link);
+      if (link) {
+        link.classList.remove('active');
+      }
+    });
+
+    if (current) {
+      const activeLink = document.getElementById(current);
+      if (activeLink) {
+        activeLink.classList.add('active');
+      }
+    }
+  });
+</script>
+</body>
+</html>
 
 
 
