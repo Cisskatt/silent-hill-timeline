@@ -12,3 +12,5 @@ Här har jag även testat script för första gången
 - Färgskala som ska inge Silent Hill-vibes
 - Responsiv layout som fungerar i moderna webbläsare
 
+- Kan ses här: https://cisskatt.github.io/silent-hill-timeline/
+
